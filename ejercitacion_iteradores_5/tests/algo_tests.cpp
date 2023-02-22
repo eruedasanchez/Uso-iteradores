@@ -18,6 +18,8 @@ TEST(algo_tests, test_minimo) {
     list<int> l = {5, 4};
     EXPECT_EQ(minimo(l), 4);
 
+    /**** Casos de tests ejercicio 1 funcionando correctamente :) ****/
+
     # if EJ >= 8
     map<int, string> m;
     m[5] = "Hola";
@@ -40,6 +42,8 @@ TEST(algo_tests, test_promedio) {
     EXPECT_EQ(promedio(l), 4.5);
 }
 
+/**** Casos de tests ejercicio 2 funcionando correctamente :) ****/
+
 #endif
 #if EJ >= 3
 
@@ -54,6 +58,8 @@ TEST(algo_tests, test_minimoIter) {
 
     const list<int> l = {5, 4};
     EXPECT_EQ(minimoIter(l.begin(),l.end()), 4);
+
+    /**** Casos de tests ejercicio 3 funcionando correctamente :) ****/
 
     # if EJ >= 8
     map<int, string> m;
