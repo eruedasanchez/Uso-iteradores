@@ -107,6 +107,8 @@ TEST(algo_tests, test_filtrar) {
     EXPECT_EQ(m.size(), 1);
 }
 
+/**** Casos de tests ejercicio 4 funcionando correctamente :) ****/
+
 #endif
 #if EJ >= 5
 
@@ -119,6 +121,8 @@ TEST(algo_tests, test_ordenado) {
     EXPECT_TRUE(ordenado(s1));
     EXPECT_TRUE(ordenado(s2));
 }
+
+/**** Casos de tests ejercicio 5 funcionando correctamente :) ****/
 
 #endif
 #if EJ >= 6
@@ -161,6 +165,8 @@ TEST(algo_tests, test_split) {
     }
 
 }
+
+/**** Casos de tests ejercicio 6 funcionando correctamente :) ****/
 
 #endif
 #if EJ >= 7
