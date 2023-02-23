@@ -243,3 +243,7 @@ TEST(algo_tests, test_merge) {
 }
 
 #endif
+
+/**** Casos de tests ejercicio 7 funcionando correctamente :) ****/
+
+
