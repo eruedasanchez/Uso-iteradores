@@ -119,7 +119,41 @@ std::pair<Contenedor,Contenedor> split(const Contenedor& c, const typename Conte
 }
 
 /* Ejercicio 7 */
+template<class Contenedor>
+void merge(const Contenedor& c1, const Contenedor& c2, Contenedor& res){
+    auto itContUno = c1.begin();
+    auto itContDos = c2.begin();
+    auto itRes = res.begin();
 
-/* Ejercicio 8 */
+    while(itContUno != c1.end() && itContDos != c2.end()){
+        if(*itContUno < *itContDos){
+            /* Insertar en el contenedor res al elemento de c1 */
+            itRes = res.insert(itRes,*itContUno);
+            ++itContUno;
+        } else {
+            /* Insertar en el contenedor res al elemento de c2 */
+            itRes = res.insert(itRes,*itContDos);
+            ++itContDos;
+        }
+        ++itRes;
+    }
+
+    /* Inserto los elementos de c1 que faltan */
+    while(itContUno != c1.end()) {
+        itRes = res.insert(itRes,*itContUno);
+        ++itContUno;
+        ++itRes;
+    }
+
+    /* Inserto los elementos de c2 que faltan */
+    while(itContDos != c2.end()) {
+        itRes = res.insert(itRes,*itContDos);
+        ++itContDos;
+        ++itRes;
+    }
+}
 
 #endif //ALGO2_LABO_CLASE5_ALGORITMOS_H
+
+
+
